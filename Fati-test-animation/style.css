@@ -1,0 +1,70 @@
+
+@keyframes MyAnimation{
+
+    0%{
+      border-left-color: #ffffff;
+      border-left-width: 1px;
+   }
+   
+   25%{
+    border-top-color: #ffffff;
+    border-left-width: 1px;
+   }
+   
+   50%{
+    border-right-color: #ffffff;
+    border-left-width: 1px;
+   }
+
+   75%{
+    border-bottom-color: #ffffff;
+    border-left-width: 1px; 
+    
+   }
+   100%{
+    border-left-color: #ffffff;
+    border-left-width: 1px;
+    background-color: royalblue;
+    box-shadow: 0 0 10px royalblue, 0 0 40px royalblue,0 0 50px;
+    transition-delay: .8s;  
+   }
+   
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.box{
+    position: relative;
+    top: 300px;
+    right: -570px;
+    border:2px #181616 solid;
+    border-radius: 150px;
+    padding: 15px 30px;
+    /* animation-name: MyAnimation; */
+    animation-duration: 2s;
+    /* animation:MyAnimation 2s ;   */
+}
+
+.box:hover{
+    cursor: pointer;
+     animation:MyAnimation 2s;
+}
+
+
+
+
+
+
+
